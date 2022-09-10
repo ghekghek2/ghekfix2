@@ -4,6 +4,8 @@ import Kevin from "./img/kevin.png";
 import More from "./img/more.png";
 import Phil from "./img/phil.png";
 import { FaLocationArrow, FaPhone } from "react-icons/fa";
+import Fade from 'react-reveal/Fade';
+import Zoom from 'react-reveal/Zoom';
 
 function About() {
   return (
@@ -11,6 +13,7 @@ function About() {
       <div className="wrapper">
         <div id="About" className="About">
           <div className="about-wrapper">
+<Fade top> 
             <div className="about-info">
               <h3>About</h3>
               <p>
@@ -21,26 +24,34 @@ function About() {
                 keep them satisfied !
               </p>
             </div>
+            </Fade>
             <div className="about-team">
               <h3>Team</h3>
               <div className="cards">
+                <Fade left duration={2000}>
                 <div className="team-card">
                   <img class="card-img" src={More} alt="" />
                   <div className="card-name">More</div>
                   <div className="card-position">Smart Phone Tech</div>
                 </div>
+                </Fade>
+                <Zoom duration={3000}>
                 <div className="team-card">
                   <img class="card-img" src={Kevin} alt="" />
                   <div className="card-name">Kevin</div>
                   <div className="card-position">Chief Technician</div>
                 </div>
+                </Zoom>
+                <Fade right duration={2000}>
                 <div className="team-card">
                   <img class="card-img" src={Phil} alt="" />
                   <div className="card-name">Phil</div>
                   <div className="card-position">Network Tech</div>
                 </div>
+                </Fade>
               </div>
             </div>
+            <Fade>
             <div className="about-footer">
               <div className="footer-content">
                 <FaLocationArrow className="about-footer-icon" />
@@ -51,6 +62,7 @@ function About() {
                 <p>09613794822</p>
               </div>
             </div>
+            </Fade>
           </div>
         </div>
       </div>

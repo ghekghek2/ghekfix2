@@ -2,13 +2,14 @@ import React from "react";
 import "../style/contact.css";
 import ResponsiveEmbed from "react-responsive-embed";
 import { FaArrowRight } from "react-icons/fa";
+import Fade from 'react-reveal/Fade';
 function Contact() {
   return (
     <div className="container" >
       <div className="wrapper">
       <h3 className="contact-title">Contact</h3>
         <div id="Contact"  className="Contact">
-          
+         <Fade duration={2000}>
       <div className="form">
        
         <form action="">
@@ -28,11 +29,12 @@ function Contact() {
               </a>
         </form>
       </div>
-
+      </Fade> 
+      <Fade duration={2000}>
 <div className="ratio">
 <ResponsiveEmbed  src='https://www.youtube.com/embed/RWbxbQRNF0A'  ratio='16:9' />
 </div>
-
+</Fade>
 
 
 
