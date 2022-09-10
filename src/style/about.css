@@ -1,0 +1,130 @@
+.About{
+    padding: 1rem;
+}
+.about-wrapper{
+    display: flex;
+    justify-content: center;
+flex-direction: column;
+align-items: center;
+gap: 3rem;
+
+}
+.about-wrapper p{
+   
+  text-align: justify;
+  line-height: 1.5rem;
+  letter-spacing: 2.5px;
+}
+
+.about-wrapper h3{
+    padding-bottom: 1rem;
+    font-weight: 900;
+    font-size: 3em;
+    text-align: center;
+    
+}
+
+.about-info{
+     width: 70%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+}
+.about-team{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.about-team h3{
+    font-size: 1.5rem;
+    margin-left: 2.5rem;
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    width: 100%;
+
+}
+
+.team-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: .40rem;
+}
+
+
+.team-card .card-name{
+    font-weight: 900;
+}
+.team-card .card-position{
+    opacity: 60%;
+    z-index: -1;
+}
+.cards .team-card img{
+    
+    background: var(--blue);
+    border-radius: 50%;
+    line-height: 10px;
+}
+
+
+.about-footer{
+display: flex;
+justify-content: center;
+justify-content: space-between;
+width: 70%;
+
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+
+}
+.footer-content p{
+    padding-left: .5rem;
+    font-size: .65rem;
+}
+
+.phone{
+    transform: scaleX(-1);
+}
+.about-footer-icon{
+    color: var(--red);
+}
+
+
+@media only screen and (max-width: 1024px) {
+.About{
+    padding: 0;
+}
+.about-info{
+    width: 100%;
+}
+.cards{
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.about-wrapper h3{
+    margin: 0;
+    padding: 0;
+    padding-bottom: 3rem;
+}
+.about-footer{
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.about-footer{
+    width: 100%;
+}
+
+
+}

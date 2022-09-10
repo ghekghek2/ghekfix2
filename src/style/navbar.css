@@ -1,0 +1,89 @@
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    padding: 0 1rem;
+  z-index: 99;
+    color: var(--gray);
+  }
+  nav a {
+    margin: 0 2rem;
+    color: var(--gray);
+    text-decoration: none;
+  }
+  
+  nav .con {
+    margin-right: 0;
+  }
+  nav a:hover {
+    color: var(--blue);
+  }
+  
+  header .nav-btn {
+    padding: 5px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--gray);
+    visibility: hidden;
+    opacity: 0;
+    font-size: 1.3rem;
+    display: none;
+  }
+  
+  .nav-btn:hover {
+    color: var(--blue);
+  }
+  
+  @media only screen and (max-width: 1024px) {
+    header {
+      padding: 0;
+    }
+  
+    header img {
+      width: 8rem;
+    }
+  
+    header .nav-btn {
+      visibility: visible;
+      opacity: 1;
+      display: block;
+    }
+    nav .con {
+      margin: 0 2rem;
+    }
+    header nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1.5rem;
+      background-color: rgb(37, 37, 37);
+      transition: 0.3s;
+  
+      transform: translateY(-100vh);
+      border-bottom: 2px solid var(--gray);
+    }
+  
+    header .responsive-nav {
+      transform: none;
+    }
+  
+    nav .nav-close-btn {
+      position: absolute;
+      top: 2rem;
+      right: 2rem;
+    }
+  }

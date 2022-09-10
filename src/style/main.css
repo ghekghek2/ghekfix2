@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Orbitron", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+}
+/* html {
+  scroll-behavior: smooth;
+} */
+:root {
+  --red: #f95d75;
+  --blue: #4a94f3;
+  --gray: #454749;
+  --white: #fff;
+  font-size: 1.3rem;
+  letter-spacing: 1.5px;
+  color: var(--gray);
+  scroll-behavior: smooth;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  width: min(95%, 1440px);
+  justify-content: center;
+  align-items: center;
+  margin-inline: auto;
+  position: relative;
+}
+
+.container {
+  width: 100%;
+
+  height: calc(100% - 80px);
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid gray; */
+}
+
+/* .home,
+.Services,
+.About,
+.Contact {
+
+} */
+
+.Services,
+.About,
+.Contact {
+margin-bottom: 5em;
+}
+
+.wrapper {
+  width: 98%;
+
+ 
+  margin-inline: auto;
+}
+
+/* Navbar */
+
+/* End of Navbar */
+/* Home */
+
+.footer {
+  height: 30vh;
+}
+
+.btn{
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1024px) {
+  .wrapper {
+    padding: 0;
+  }
+/* hide scrollbar for chrome ,safari and opera */
+body::-webkit-scrollbar{
+  display: none;
+}
+
+/* for firefox scroll hide */
+  html {
+    
+    scrollbar-width: none; 
+  }
+
+
+.Services,
+.About,
+.Contact {
+margin-bottom: 5em;
+}
+}

@@ -1,0 +1,148 @@
+.Contact {
+
+  display: flex;
+  justify-content: space-between;
+  
+  align-items: center;
+  padding: 1rem;
+  gap: 2em;
+  
+margin-bottom: 3em;
+}
+.contact-title{
+  padding-bottom: 1rem;
+font-weight: 900;
+font-size: 3em;
+text-align: center;
+}
+
+
+.send-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--white);
+  background-color: var(--blue);
+  border-radius: 4px;
+  padding: 0.5em 1.5em;
+  font-size: 1rem;
+  text-decoration: none;
+  letter-spacing: 1.3px;
+}
+.send {
+  color: var(--white);
+  text-decoration: none;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+.form {
+z-index: 99;
+
+  flex-basis: 80%;
+ position: relative;
+ z-index: 4;
+}
+form {
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  z-index: 4;
+  padding: 1rem;
+
+  border-radius: 4px 80px 4px 4px;
+transition: .5s;
+}
+form:hover{
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+
+  box-shadow: -12px 9px 29px 0px rgba(69,71,73,0.75);
+  -webkit-box-shadow: -12px 9px 29px 0px rgba(69,71,73,0.75);
+  -moz-box-shadow: -12px 9px 29px 0px rgba(69,71,73,0.75);
+}
+
+
+form input {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  outline: none;
+  padding-left: 0.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid var(--gray);
+  color: var(--gray);
+  width: 90%;
+  letter-spacing: 2.5px;
+ 
+}
+
+
+form h4 {
+margin-bottom:1em ;
+}
+form p {
+  font-size: 1rem;
+  color: var(--gray);
+  letter-spacing: 2.5px;
+  margin-bottom: 0.5rem;
+  color: var(--gray);
+}
+.ratio {
+  width: 50%;
+z-index: -1;
+}
+
+textarea {
+  width: 100%;
+  height: 20vh;
+  border-radius: 4px;
+  outline: none;
+  margin-bottom: 1rem;
+  padding-left: 0.5rem;
+  padding-top: 0.5rem;
+  border: 1px solid var(--gray);
+  color: var(--gray);
+  letter-spacing: 2.5px;
+
+}
+::placeholder {
+  opacity: 0.5;
+  letter-spacing: 2.5px;
+  color: var(--gray);
+}
+.ratio{
+  border-radius: 10px;
+  overflow: hidden;
+  z-index: 1;
+  width: 100%;
+
+}
+@media only screen and (max-width: 1024px) {
+  .Contact {
+    flex-direction: column-reverse;
+  }
+
+  .form {
+    width: 100%;
+    
+  }
+  form{
+    width: 100%;
+  }
+  .ratio {
+    width: 100%;
+  }
+  form input {
+    width: 100%;
+  }
+  textarea {
+    width: 100%;
+  }
+}
