@@ -51,18 +51,22 @@ function About() {
                 </Fade>
               </div>
             </div>
-            <Fade>
+           
             <div className="about-footer">
+            <Fade left>
               <div className="footer-content">
                 <FaLocationArrow className="about-footer-icon" />
                 <p>Balon Anito Mariveles Bataan</p>
               </div>
+              </Fade>
+              <Fade right>
               <div className="footer-content">
                 <FaPhone className="about-footer-icon" />
                 <p>09613794822</p>
               </div>
+              </Fade>
             </div>
-            </Fade>
+            
           </div>
         </div>
       </div>

@@ -1,0 +1,33 @@
+.contact-btn {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    background: transparent;
+  
+  }
+
+.assetbtn{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--white);
+    
+    background-color:#180152;
+    border-radius: 4px;
+    padding: .5em 1em;
+    font-size: 1rem;
+  text-decoration: none;
+    letter-spacing: 1.3px;
+    transition: .5s;
+  }
+
+  .assetbtn:hover{
+    background-color: var(--blue);
+  }
+
+  .assetbtn:hover .contact-btn{
+    padding-right: .25em;
+  }
+

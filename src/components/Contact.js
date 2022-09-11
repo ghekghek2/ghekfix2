@@ -1,15 +1,16 @@
 import React from "react";
 import "../style/contact.css";
 import ResponsiveEmbed from "react-responsive-embed";
-import { FaArrowRight } from "react-icons/fa";
+import './asset/Button.css'
 import Fade from 'react-reveal/Fade';
+import Button from './asset/Button.js'
 function Contact() {
   return (
     <div className="container" >
       <div className="wrapper">
       <h3 className="contact-title">Contact</h3>
         <div id="Contact"  className="Contact">
-         <Fade duration={2000}>
+         <Fade left duration={3000}>
       <div className="form">
        
         <form action="">
@@ -20,17 +21,11 @@ function Contact() {
         <input type="text" placeholder="Full name" />
         <p>Message</p>
 <textarea  placeholder="Message" name="" id="" ></textarea>
-<a className="send-btn" href="#/" >
-              <button type="button"  className="send btn"  >
-              Send
-               </button>
-           <FaArrowRight/>
-             
-              </a>
+<Button val="Send" />
         </form>
       </div>
       </Fade> 
-      <Fade duration={2000}>
+      <Fade right duration={3000}>
 <div className="ratio">
 <ResponsiveEmbed  src='https://www.youtube.com/embed/RWbxbQRNF0A'  ratio='16:9' />
 </div>

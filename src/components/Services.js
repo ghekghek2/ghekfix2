@@ -43,7 +43,7 @@ function Services() {
   </div>
   </Fade>
 
-<Fade left duration={2500}>
+<Fade left duration={2000}>
 <div className="card-mid">
   <div className="card">
     <div className="card-title">
@@ -84,7 +84,7 @@ function Services() {
   </Fade>
 
 
-  <Fade left duration={3500}>
+  <Fade left duration={3000}>
   <div className="card-mid">
   <div className="card">
     <div className="card-title">
@@ -122,7 +122,7 @@ function Services() {
   </div>
   </div>
   </Fade>
-<Fade left duration={4500}>
+<Fade left duration={4000}>
   <div className="card">
     <div className="card-title">
       <h3>Smart phone Repair</h3>
